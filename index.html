@@ -631,6 +631,41 @@
                 font-size: 2rem;
             }
         }
+        .hero-layout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.hero-content {
+  flex: 1 1 50%;
+  max-width: 600px;
+}
+
+.hero-image {
+  flex: 1 1 40%;
+  text-align: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+@media (max-width: 768px) {
+  .hero-layout {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content, .hero-image {
+    flex: 1 1 100%;
+  }
+}
+
     </style>
 </head>
 <body>
@@ -663,21 +698,26 @@
 
     <!-- **Hero Section** -->
     <section class="hero" id="home">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Power Your World <br>With Solar Energy</h1>
-                <p>Krushisun's cutting-edge solar trolleys provide portable, efficient, and sustainable energy solutions for agriculture, homes, and businesses.</p>
-                <div class="hero-buttons">
-                    <a href="#products" class="btn">Explore Now</a>
-                    <a href="#contact" class="btn btn-secondary">Get a Quote</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="https://via.placeholder.com/600x500" alt="Krushisun Solar Trolley">
-                <div class="sun-rays"></div>
-            </div>
-        </div>
-    </section>
+  <div class="container hero-layout">
+    <div class="hero-content">
+      <h1>
+        Power Your World <br>
+        <span>With Solar Energy</span>
+      </h1>
+      <p>
+        Krushisun's cutting-edge solar trolleys provide portable, efficient, and sustainable energy solutions for agriculture, homes, and businesses.
+      </p>
+      <div class="hero-buttons">
+        <a href="#products" class="btn">Explore Now</a>
+        <a href="#contact" class="btn btn-secondary">Get a Quote</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="troll.jpeg" alt="Krushisun Solar Trolley">
+    </div>
+  </div>
+</section>
+
 
     <!-- **Product Carousel (Replaces 3D Viewer)** -->
     <section class="container" id="products">
@@ -775,8 +815,8 @@
                 </div>
                 <div class="footer-col">
                     <h3>Contact</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> 4th Floor, B-wing, Office no 44, KK Market, Dhankawadi, Pune, Maharashtra 411043</p>
-                    <p><i class="fas fa-phone"></i> +91 9119495908</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Solar Park, Pune, India</p>
+                    <p><i class="fas fa-phone"></i> +91 9876543210</p>
                     <p><i class="fas fa-envelope"></i> info@krushisun.com</p>
                 </div>
             </div>
