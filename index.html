@@ -6,6 +6,7 @@
     <title>Krushisun | Solar Trolley Innovations</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-NM49CV698Q"></script>
@@ -17,6 +18,10 @@
   gtag('config', 'G-NM49CV698Q');
 </script>
     <style>
+        model-viewer {
+        width: 100%;
+        height: 500px;
+      }
         :root {
             --primary: #FF9F1C;
             --secondary: #FFD700;
@@ -727,14 +732,16 @@
     </div>
   </div>
 </section>
-<model-viewer 
-    src="aston.glb" 
-    alt="Solar Trolley" 
-    ar 
-    camera-controls 
-    auto-rotate
-    style="width:100%; height:100%;">
-</model-viewer>
+    <model-viewer 
+      src="aston.glb" 
+      alt="A 3D model" 
+      auto-rotate 
+      camera-controls 
+      ar
+      ar-modes="webxr scene-viewer quick-look"
+      shadow-intensity="1">
+    </model-viewer>
+
 
     <!-- **Product Carousel (Replaces 3D Viewer)** -->
     <section class="container" id="products">
